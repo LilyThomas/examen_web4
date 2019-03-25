@@ -61,6 +61,11 @@ public class WalletController {
 
     @GetMapping("/")
     public String index(){
+        return "redirect:/home";
+    }
+
+    @GetMapping("/home")
+    public String home(){
         return "index";
     }
 
@@ -123,7 +128,7 @@ public class WalletController {
         System.out.println("A " + walletA.getBalance());
         System.out.println("B " + walletB.getBalance());
 
-        return "redirect:/balance/{from}";
+        return "redirect:/home";
     }
 
 }
