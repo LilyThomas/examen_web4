@@ -7,9 +7,29 @@
     <title>Transaction form</title>
 </head>
 <body>
+    <h1>Send funds:</h1>
+    <form method="POST" th:action="@{/transaction}">
+        <p>From:</p>
+            <select name="wallet1" id="walletFrom">
+                <option value="">--</option>
+                <option value="walletA">walletA</option>
+                <option value="walletB">walletB</option>
+            </select>
 
-    <form method="POST" action="@{/transaction}">
+        <br/>
 
+        <p>To:</p>
+            <select id="wallet2" name="walletTo" >
+                <option value="">--</option>
+                <option value="walletA">walletA</option>
+                <option value="walletB">walletB</option>
+            </select>
+
+        <br/>
+
+        <input name="amount" id="amount" type="text"/>
+        <br/>
+        <input type="submit" value="Send"/>
     </form>
 
 </body>
