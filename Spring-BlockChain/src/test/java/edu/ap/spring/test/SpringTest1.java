@@ -13,6 +13,8 @@ import org.junit.runners.MethodSorters;
 import edu.ap.spring.service.*;
 import edu.ap.spring.transaction.Transaction;
 
+import javax.annotation.PostConstruct;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)

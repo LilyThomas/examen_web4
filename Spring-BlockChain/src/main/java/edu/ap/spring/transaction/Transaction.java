@@ -5,6 +5,8 @@ import java.security.*;
 import edu.ap.spring.service.BlockChain;
 import edu.ap.spring.service.StringUtil;
 
+import javax.annotation.PostConstruct;
+
 public class Transaction {
 	
 	public String transactionId; // contains a hash of transaction
